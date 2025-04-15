@@ -1,3 +1,5 @@
+from tensorflow.keras.layers import Input, Conv2D, BatchNormalization, AveragePooling2D, Flatten, Dense, UpSampling2D
+
 def multiscale_feature_extraction(x):
     # Branch 1
     branch1 = tf.keras.layers.Conv2D(filters=32, kernel_size=(1, 1), activation='relu', padding='same')(x)
